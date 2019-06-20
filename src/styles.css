@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/reset.css';
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+/*@import './assets/styles/overrides.scss';*/
+/*@import './assets/styles/variables.scss';*/
+
+body {
+  background-color: #252525;
+}
+
+.custom-modalbox .mat-dialog-container {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px -2px 59px 28px rgba(242,225,242,1);
+  -moz-box-shadow: 10px -2px 59px 28px rgba(242,225,242,1);
+  box-shadow: 10px -2px 59px 28px rgba(242,225,242,1);
+}

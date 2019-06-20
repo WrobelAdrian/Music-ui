@@ -1,0 +1,50 @@
+span {
+  color: white;
+  font-size: 25px;
+}
+
+.container__wrapper {
+  height: 160px;
+  background-image: url('src/assets/images/header.jpg');
+  border-top: 5px solid black;
+
+  .container__top {
+    display: flex;
+    width: 100%;
+
+    .container__left {
+      width: 70%;
+      padding: 20px;
+
+      .container__logo {
+        .container__logo-label {
+          margin: 0 10px;
+        }
+      }
+      .container__menu {
+        .container__menu-label {
+          margin: 0 10px;
+          cursor: pointer;
+          outline: none;
+        }
+        .container__menu-label:hover {
+          color: #4c0035;
+        }
+      }
+      .container__icons {
+        .container__icons-label {
+          margin: 0 10px;
+        }
+      }
+    }
+    .container__right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .container__bottom {
+    .container__bottom-label {
+      margin-left: 100px;
+    }
+  }
+}

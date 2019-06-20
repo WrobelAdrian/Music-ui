@@ -1,0 +1,61 @@
+
+<!--PAGE CONTAINER-->
+<div class="container__wrapper">
+
+  <!--LOGIN CONTAINER-->
+  <div class="container">
+
+    <!--LOGIN LABEL-->
+    <div class="container__login--label">
+      <h3 class="label__login">Login</h3>
+    </div>
+
+    <!--FORM CONTAINER-->
+    <div class="form__container">
+      <form [formGroup]="loginForm">
+
+        <!--LOGIN-->
+        <div class="form-group">
+          <label class="form__label">Login</label>
+          <input class="form__input" type="text" matInput [formControl]="loginForm['controls'].email">
+        </div>
+
+        <div *ngIf="loginForm['controls'].email.invalid && (loginForm['controls'].email.dirty || loginForm['controls'].email.touched)"
+             class="alert alert-danger">
+          <div class="container__alert" *ngIf="loginForm['controls'].email.errors.required">
+            <span class="form__alert">Login is required.</span>
+          </div>
+          <div class="container__alert" *ngIf="loginForm['controls'].email.errors.minLength">
+            <span class="form__alert">Login is too short.</span>
+          </div>
+        </div>
+
+        <!--PASSWORD-->
+        <div class="form-group">
+          <label class="form__label">Password</label>
+          <input class="form__input" type="password" matInput [formControl]="loginForm['controls'].password">
+        </div>
+
+        <div *ngIf="loginForm['controls'].password.invalid && (loginForm['controls'].password.dirty || loginForm['controls'].password.touched)"
+             class="alert alert-danger container__alert">
+          <div class="container__alert" *ngIf="loginForm['controls'].password.errors.required">
+            <span class="form__alert">Password is required.</span>
+          </div>
+          <div class="container__alert" *ngIf="loginForm['controls'].password.errors.minLength">
+            <span class="form__alert">Password is too short.</span>
+          </div>
+          <div class="container__alert" *ngIf="loginForm['controls'].password.errors.forbiddenPassword">
+            <span class="form__alert">Password must contains numbers.</span>
+          </div>
+        </div>
+
+        <!--BUTTONS-->
+        <div class="form-group-buttons">
+          <button (click)="onSubmit()" class="btn btn-primary form__button" [disabled]="loginForm.invalid">Login</button>
+          <button (click)="register()" class="btn btn-link form__button">Register</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

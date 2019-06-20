@@ -1,0 +1,55 @@
+<div class="container__wrapper">
+
+  <div class="container__register-label">
+    <h2 class="register__label">Register</h2>
+  </div>
+
+  <!--REGISTER FORM-->
+  <form [formGroup]="registerForm">
+
+    <!--TERMS OF SERVICE-->
+    <div class="container__checkbox">
+      <span class="checkbox__label">To enable register form check terms of service.</span>
+      <mat-checkbox labelPosition="after" color="primary" [ngModelOptions]="{standalone: true}" [(ngModel)]="checked" (change)="handleChange($event)">
+        <span class="checkbox__label">Terms of service</span>
+      </mat-checkbox>
+    </div>
+
+    <!--FIRST NAME-->
+    <div class="form-group">
+      <label class="form__label">First name</label>
+      <input class="form__input" type="text" matInput [formControl]="registerForm['controls'].firstName">
+    </div>
+
+    <!--LAST NAME-->
+    <div class="form-group">
+      <label class="form__label">Last name</label>
+      <input class="form__input" type="text" matInput [formControl]="registerForm['controls'].lastName">
+    </div>
+
+    <!--EMAIL-->
+    <div class="form-group">
+      <label class="form__label">Email</label>
+      <input class="form__input" type="text" matInput [formControl]="registerForm['controls'].email">
+    </div>
+
+    <!--PHONE NUMBER-->
+    <div class="form-group">
+      <label class="form__label">Phone number</label>
+      <input class="form__input" type="text" matInput [formControl]="registerForm['controls'].phoneNumber">
+    </div>
+
+    <!--PASSWORD-->
+    <div class="form-group">
+      <label class="form__label">Password</label>
+      <input class="form__input" type="text" matInput [formControl]="registerForm['controls'].password" required>
+    </div>
+
+    <!--BUTTON-->
+    <div class="form-group-button">
+      <button type="submit" class="btn btn-primary form__button" (click)="onSubmit()">Register</button>
+    </div>
+  </form>
+
+</div>
+

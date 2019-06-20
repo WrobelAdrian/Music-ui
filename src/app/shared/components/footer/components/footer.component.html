@@ -1,0 +1,33 @@
+<!--FOOTER CONTAINER-->
+<div class="container__wrapper">
+
+  <!--TOP-->
+  <div class="container__top">
+
+    <!--LEFT SECTION-->
+    <div class="container__left">
+      <div class="container__logo">
+        <span class="container__logo-label">LOGO</span>
+      </div>
+      <div class="container__menu">
+        <span class="container__menu-label" routerLink="/{{menuItem}}" *ngFor="let menuItem of menu">{{menuItem.toUpperCase()}}</span>
+      </div>
+      <div class="container__icons">
+        <span class="container__icons-label" *ngFor="let iconItem of iconList">{{iconItem.toUpperCase()}}</span>
+      </div>
+    </div>
+
+    <!--RIGHT SECTION-->
+    <div class="container__right">
+      <span>CONTACT US</span>
+      <span>Lorem ipsum dolor sit amet, consectetur</span>
+      <span>PHONE: 123 123 123</span>
+      <span>EMAIL: MAIL@MAIL.COM</span>
+    </div>
+  </div>
+
+  <!--BOTTOM-->
+  <div class="container__bottom">
+    <span class="container__bottom-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<!--HEADER CONTAINER-->
+<div class="container__wrapper">
+
+  <!--TOP -->
+  <div class="container__top">
+
+    <!--TOP LEFT SECTION-->
+    <div class="container__top-left">
+      <!--LOGO-->
+      <div class="container__logo">
+        <span>LOGO</span>
+      </div>
+    </div>
+
+    <!--TOP RIGHT SECTION-->
+    <div class="container__top-right">
+      <!--SEARCH-->
+      <div class="container__search">
+        <span class="search__label">SEARCH</span>
+        <input class="search__input" [(ngModel)]="searchInput" (change)="search()" [placeholder]="'.,|,. ^_^ .,|,.'">
+      </div>
+      <!--LOGOUT-->
+      <div class="container__logout">
+        <button class="logout__button" (click)="logout()">LOGOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <!--BOTTOM-->
+  <div class="container__bottom">
+    <!--MENU-->
+    <div class="container__menu">
+      <div class="container__menu-item" *ngFor="let menuItem of menu">
+        <span class="menu__label" routerLink="/{{menuItem}}">{{menuItem.toUpperCase()}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

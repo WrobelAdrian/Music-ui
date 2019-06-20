@@ -1,0 +1,81 @@
+
+.container__wrapper {
+  background-image: url('src/assets/images/login.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    .container__login--label {
+      display: flex;
+      justify-content: center;
+
+      .label__login {
+        font-size: 50px;
+        color: white;
+        margin: 0;
+      }
+    }
+    .form__container {
+
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        margin: 25px;
+
+        .form__label {
+          font-size: 30px;
+          color: white;
+        }
+
+        .form__input {
+          border-radius: 10px;
+          border: 1px solid white;
+          width: 250px;
+          font-size: 19px;
+          padding: 5px;
+          outline: none;
+        }
+      }
+
+      .container__alert {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .form__alert {
+          color: white;
+          font-size: 20px;
+        }
+      }
+
+      .form-group-buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin: 25px;
+
+        .form__button {
+          height: 50px;
+          width: 130px;
+          border-radius: 20px;
+          border: 1px solid white;
+          background-color: white;
+          font-size: 20px;
+          outline: none;
+        }
+      }
+    }
+  }
+}

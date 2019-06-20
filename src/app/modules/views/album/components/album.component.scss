@@ -1,0 +1,82 @@
+.container__wrapper {
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container__header {
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+  }
+
+  .container__content {
+    margin-top: 160px;
+    background-image: url('src/assets/images/band-3.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: -webkit-fill-available;
+
+    .container__search {
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+
+      .search__input {
+        height: 40px;
+        width: 400px;
+        font-size: 18px;
+        padding-left: 16px;
+        border: 5px solid #4c0035;
+        border-radius: 15px;
+        outline: none;
+      }
+    }
+
+    .table__wrapper {
+      margin-bottom: 30px;
+      width: 80%;
+      background-color: #1d1c1c;
+
+      .table__header--wrapper {
+        display: flex;
+        justify-content: space-around;
+        background: #151414;
+
+        .table__header {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          border: 1px solid grey;
+          width: -webkit-fill-available;
+          justify-content: center;
+          color: white;
+        }
+      }
+
+      .table__row {
+        display: flex;
+        justify-content: space-around;
+
+        .table__row--column {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          border: 1px solid grey;
+          width: -webkit-fill-available;
+          justify-content: center;
+          overflow: hidden;
+          white-space: nowrap;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .container__footer {
+
+  }
+}
