@@ -1,49 +1,36 @@
-<div class="container__wrapper">
 
-  <!--HEADER-->
-  <div class="container__header">
-    <app-header></app-header>
+<!--CONTENT-->
+<div class="container__content">
+
+  <!--SEARCH INPUT-->
+  <div class="container__search">
+    <input class="search__input" [(ngModel)]="searchInput" (change)="search()" [placeholder]="'Enter band name'">
   </div>
 
-  <!--CONTENT-->
-  <div class="container__content">
-
-    <!--SEARCH INPUT-->
-    <div class="container__search">
-      <input class="search__input" [(ngModel)]="searchInput" (change)="search()" [placeholder]="'Enter band name'">
-    </div>
-
-    <!--TABLE-->
-    <div class="table__wrapper">
-      <!--TABLE HEADER-->
-      <div class="table__header--wrapper">
-        <div class="table__header" *ngFor="let label of columnsToDisplay">
-          {{label}}
-        </div>
-      </div>
-
-      <!--TABLE ROWS-->
-      <div class="table__row" *ngFor="let item of musicList">
-        <div class="table__row--column">
-          {{item.album.title}}
-        </div>
-        <div class="table__row--column">
-          {{item.artist.name}}
-        </div>
-        <div class="table__row--column">
-          {{item.duration}}
-        </div>
-        <div class="table__row--column">
-          {{item.title}}
-        </div>
+  <!--TABLE-->
+  <div class="table__wrapper">
+    <!--TABLE HEADER-->
+    <div class="table__header--wrapper">
+      <div class="table__header" *ngFor="let label of columnsToDisplay">
+        {{label}}
       </div>
     </div>
 
-  </div>
-
-  <!--FOOTER-->
-  <div class="container__footer">
-    <app-footer></app-footer>
+    <!--TABLE ROWS-->
+    <div class="table__row" *ngFor="let item of musicList">
+      <div class="table__row--column">
+        {{item.album.title}}
+      </div>
+      <div class="table__row--column">
+        {{item.artist.name}}
+      </div>
+      <div class="table__row--column">
+        {{item.duration}}
+      </div>
+      <div class="table__row--column">
+        {{item.title}}
+      </div>
+    </div>
   </div>
 
 </div>

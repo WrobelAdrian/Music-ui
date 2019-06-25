@@ -30,5 +30,6 @@ import {AppRouterLinks} from '../../../app-routing.config';
 
   isAuthenticated(): boolean {
     return this.cookies.check('token');
+    // TODO: backend
   }
 }

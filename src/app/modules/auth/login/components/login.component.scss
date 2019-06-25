@@ -21,7 +21,7 @@
 
       .label__login {
         font-size: 50px;
-        color: white;
+        color: var(--font-white-color);
         margin: 0;
       }
     }
@@ -35,12 +35,12 @@
 
         .form__label {
           font-size: 30px;
-          color: white;
+          color: var(--font-white-color);
         }
 
         .form__input {
           border-radius: 10px;
-          border: 1px solid white;
+          border: 1px solid var(--font-white-color);
           width: 250px;
           font-size: 19px;
           padding: 5px;
@@ -55,7 +55,7 @@
         align-items: center;
 
         .form__alert {
-          color: white;
+          color: var(--font-white-color);
           font-size: 20px;
         }
       }
@@ -70,8 +70,8 @@
           height: 50px;
           width: 130px;
           border-radius: 20px;
-          border: 1px solid white;
-          background-color: white;
+          border: 1px solid var(--font-white-color);
+          background-color: var(--font-white-color);
           font-size: 20px;
           outline: none;
         }

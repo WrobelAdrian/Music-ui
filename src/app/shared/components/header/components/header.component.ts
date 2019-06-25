@@ -9,7 +9,7 @@ import {AppRouterUrls} from '../../../../app-routing.config';
 })
 export class HeaderComponent implements OnInit {
 
-  menu = Object.values(AppRouterUrls).slice(1, Object.values(AppRouterUrls).length);
+  menu = Object.values(AppRouterUrls).slice(2, Object.values(AppRouterUrls).length);
   searchInput;
 
   constructor(private authService: AuthService) {

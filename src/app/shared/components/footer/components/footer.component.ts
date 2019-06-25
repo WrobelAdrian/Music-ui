@@ -8,7 +8,7 @@ import {AppRouterUrls} from '../../../../app-routing.config';
 })
 export class FooterComponent implements OnInit {
 
-  menu = Object.values(AppRouterUrls).slice(1, Object.values(AppRouterUrls).length);
+  menu = Object.values(AppRouterUrls).slice(2, Object.values(AppRouterUrls).length);
   iconList = ['icon1', 'icon2', 'icon3'];
   constructor() { }
 

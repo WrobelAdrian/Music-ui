@@ -6,10 +6,12 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {AuthorizationInterceptor} from './_interceptors/authorization.interceptor';
 import {AuthModule} from './modules/auth/auth.module';
 import {CoreModule} from './modules/views/core.module';
+import { MainComponent } from './modules/views/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainComponent,
   ],
   imports: [
     SharedModule,

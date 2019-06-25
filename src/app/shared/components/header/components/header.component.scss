@@ -1,7 +1,7 @@
 .container__wrapper {
   height: 160px;
   background-image: url('src/assets/images/header.jpg');
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--border-black-color);
 
   .container__top {
     display: flex;
@@ -32,20 +32,20 @@
         .search__input {
           height: 30px;
           border-radius: 10px;
-          border: 3px solid #4c0035;
+          border: 3px solid var(--purple-color);
           padding-left: 30px;
         }
       }
       .container__logout {
 
         .logout__button {
-          background-color: #373737;
+          background-color: var(--background-color);
           outline: none;
-          border: 1px solid black;
+          border: 1px solid var(--border-black-color);
           height: 50px;
           width: 150px;
           font-size: 22px;
-          color: white;
+          color: var(--font-white-color);
           cursor: pointer;
           border-radius: 10px;
         }
@@ -65,7 +65,7 @@
           outline: none;
         }
         .menu__label:hover {
-          color: #4c0035;
+          color: var(--purple-color);
         }
       }
     }
@@ -73,6 +73,6 @@
 }
 
 span {
-  color: white;
+  color: var(--font-white-color);
   font-size: 30px;
 }

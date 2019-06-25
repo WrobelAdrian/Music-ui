@@ -1,5 +1,6 @@
 export const AppRoutes = {
   LOGIN: 'login',
+  MAIN: 'main',
   HOME: 'home',
   ABOUT_US: 'about_us',
   ALBUM: 'album',
@@ -11,6 +12,7 @@ export const AppRoutes = {
 
 export const AppRouterLinks = {
   LOGIN: [AppRoutes.LOGIN],
+  MAIN: [AppRoutes.MAIN],
   HOME: [AppRoutes.HOME],
   ABOUT_US: [AppRoutes.ABOUT_US],
   ALBUM: [AppRoutes.ALBUM],
@@ -22,6 +24,7 @@ export const AppRouterLinks = {
 
 export const AppRouterUrls = {
   LOGIN: `${AppRoutes.LOGIN}`,
+  MAIN: `${AppRoutes.MAIN}`,
   HOME: `${AppRoutes.HOME}`,
   ABOUT_US: `${AppRoutes.ABOUT_US}`,
   ALBUM: `${AppRoutes.ALBUM}`,
