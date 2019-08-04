@@ -64,8 +64,15 @@
           cursor: pointer;
           outline: none;
         }
+
+        .menu__label-active {
+          color: #FFFFFF;
+          text-shadow: #FFF 0 0 5px, #FFF 0 0 10px, #FFF 0 0 15px, #53182a 0 0 20px, #53182A 0 0 30px, #53182A 0 0 40px, #53182A 0 0 50px, #53182A 0 0 75px;
+        }
+
         .menu__label:hover {
           color: var(--purple-color);
+
         }
       }
     }

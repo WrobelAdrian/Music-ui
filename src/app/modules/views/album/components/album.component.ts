@@ -20,14 +20,13 @@ export class AlbumComponent implements OnInit {
   }
 
   async ngOnInit() {
-    await this.musicService.search(CategoryEnum.ARTIST, 'queen').subscribe(music => {
+    await this.musicService.search(CategoryEnum.ALBUM, 'queen').subscribe(music => {
       this.musicList = music.data;
     });
   }
 
   async search() {
-    console.log(this.searchInput)
-    await this.musicService.search(CategoryEnum.ARTIST, this.searchInput).subscribe(music => {
+    await this.musicService.search(CategoryEnum.ALBUM, this.searchInput).subscribe(music => {
       this.musicList = music.data;
     });
   }

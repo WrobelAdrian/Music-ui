@@ -31,7 +31,7 @@
     <!--MENU-->
     <div class="container__menu">
       <div class="container__menu-item" *ngFor="let menuItem of menu">
-        <span class="menu__label" routerLink="{{menuItem}}">{{menuItem.toUpperCase()}}</span>
+        <span class="menu__label" [routerLink]="[menuItem]" routerLinkActive="menu__label-active" [routerLinkActiveOptions]="{exact: true}">{{menuItem.toUpperCase()}}</span>
       </div>
     </div>
   </div>

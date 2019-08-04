@@ -19,16 +19,16 @@
     <!--TABLE ROWS-->
     <div class="table__row" *ngFor="let item of musicList">
       <div class="table__row--column">
-        {{item.album.title}}
+        {{item?.title}}
       </div>
       <div class="table__row--column">
-        {{item.artist.name}}
+        {{item?.artist?.name}}
       </div>
       <div class="table__row--column">
-        {{item.duration}}
+        {{item?.duration}}
       </div>
       <div class="table__row--column">
-        {{item.title}}
+        {{item?.title}}
       </div>
     </div>
   </div>

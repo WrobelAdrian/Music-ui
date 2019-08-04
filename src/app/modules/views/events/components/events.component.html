@@ -1,2 +1,35 @@
+<div class="container__wrapper">
 
-    <span>EVENTS</span>
+  <!--CALENDAR-->
+  <div class="calendar__wrapper" >
+    <!--LEFT-NAV-->
+    <div class="left-nav__wrapper" >
+      <div class="left-nav__empty-corner" ></div>
+      <div class="left-nav__labels"
+           *ngFor="let label of weekNumbers">
+        {{label}}
+      </div>
+    </div>
+
+    <!--CONTENT-->
+    <div class="content__wrapper" >
+    <!--HEADER-->
+      <div class="header__wrapper">
+        <div class="header__labels"
+             *ngFor="let label of dayNames">
+          {{label}}
+        </div>
+      </div>
+      <!--GRID-->
+      <div class="grid__wrapper" >
+        <div class="row__wrapper"  *ngFor="let week of weeks">
+          <div class="column__wrapper"
+               *ngFor="let day of week">
+            {{day.date.date()}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
