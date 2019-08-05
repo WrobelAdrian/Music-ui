@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       .subscribe(response => {
         if (response && response.token) {
           this.cookies.set('token', response.token);
-          this.router.navigate(AppRouterLinks.HOME);
+          this.router.navigate(AppRouterLinks.MAIN);
         }
       });
   }

@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/'
+  apiUrl: 'https://music-project-demo.herokuapp.com/',
+  websocketUrl: 'https://music-project-demo.herokuapp.com/events'
 };
 

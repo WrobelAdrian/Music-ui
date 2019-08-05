@@ -1,0 +1,21 @@
+.container__wrapper {
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container__header {
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+  }
+
+  .container__content {
+    margin-top: 160px;
+    height: -webkit-fill-available;
+  }
+
+  .container__footer {
+
+  }
+}

@@ -1,6 +1,7 @@
 export enum ApiEndpoints {
   LOGIN = 'auth/login',
   REGISTER = 'auth/register',
+  TOKEN = 'auth/token',
   USER_FIND_ALL = 'user/findAll',
   USER_FIND_ONE = 'user/self',
   USER_DELETE = 'user/self',

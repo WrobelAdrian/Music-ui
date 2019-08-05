@@ -1,12 +1,12 @@
 span {
-  color: white;
+  color: var(--font-white-color);
   font-size: 25px;
 }
 
 .container__wrapper {
   height: 160px;
   background-image: url('src/assets/images/header.jpg');
-  border-top: 5px solid black;
+  border-top: 5px solid var(--border-black-color);
 
   .container__top {
     display: flex;
@@ -28,7 +28,7 @@ span {
           outline: none;
         }
         .container__menu-label:hover {
-          color: #4c0035;
+          color: var(--purple-color);
         }
       }
       .container__icons {

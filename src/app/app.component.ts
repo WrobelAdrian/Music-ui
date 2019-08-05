@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
 
+(window as any).global = window;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

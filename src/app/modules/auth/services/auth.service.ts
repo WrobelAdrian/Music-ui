@@ -10,18 +10,18 @@ import {Router} from '@angular/router';
 import {AppRouterLinks} from '../../../app-routing.config';
 
 @Injectable()
-  export class AuthService {
-    constructor(private http: HttpClient,
-                private cookies: CookieService,
-                private router: Router) {}
+export class AuthService {
+  constructor(private http: HttpClient,
+              private cookies: CookieService,
+              private router: Router) {}
 
-    public login(credentials: CredentialsInterface): Observable<any> {
-      return this.http.post(`${environment.apiUrl}${ApiEndpoints.LOGIN}`, credentials);
-    }
+  public login(credentials: CredentialsInterface): Observable<any> {
+    return this.http.post(`${environment.apiUrl}${ApiEndpoints.LOGIN}`, credentials);
+  }
 
-    public register(user: UserInterface): Observable<any> | any {
-      return this.http.post(`${environment.apiUrl}${ApiEndpoints.REGISTER}`, user);
-    }
+  public register(user: UserInterface): Observable<any> | any {
+    return this.http.post(`${environment.apiUrl}${ApiEndpoints.REGISTER}`, user);
+  }
 
   public logout(): void {
     this.cookies.delete('token');
@@ -30,5 +30,6 @@ import {AppRouterLinks} from '../../../app-routing.config';
 
   isAuthenticated(): boolean {
     return this.cookies.check('token');
+    // TODO: backend
   }
 }
