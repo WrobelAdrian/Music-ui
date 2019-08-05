@@ -15,11 +15,11 @@ export class EventsComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() selectedDates: CalendarDate[] = [];
   @Output() onSelectDate = new EventEmitter<CalendarDate>();
 
-  private currentDate = moment();
-  private dayNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-  private weeks: CalendarDate[][] = [];
-  private sortedDates: CalendarDate[] = [];
-  private weekNumbers = [1, 2, 3, 4, 5, 6];
+  public currentDate = moment();
+  public dayNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  public weeks: CalendarDate[][] = [];
+  public sortedDates: CalendarDate[] = [];
+  public weekNumbers = [1, 2, 3, 4, 5, 6];
 
   constructor(private eventsWebsocketService: EventsWebsocketService) {
     this.createGrid();
